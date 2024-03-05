@@ -1,0 +1,9 @@
+MAV
+car
+LCV
+auto
+bike
+tractor
+person
+bus
+animal
