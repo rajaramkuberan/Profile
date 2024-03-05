@@ -77,8 +77,9 @@ The Radar Automated Traffic Count Insight (RATCI) System represents a sophistica
 |—— datasheet
 |    |—— IWR6843ISK.pdf
 |—— parsed_data
-|    |—— data_20240224-231830.csv
-|    |—— data_20240224-232330.csv
+|    |—— sample
+|        |—— data_20240224-231830.csv
+|        |—— data_20240224-232330.csv
 |—— radar_parsing
 |    |—— mmwave_parse.py
 |—— radar_processing
@@ -94,7 +95,7 @@ The Radar Automated Traffic Count Insight (RATCI) System represents a sophistica
 |    |—— main.py
 |    |—— Slow_Lane_Final_Model.pkl
 |    |—— slow_lane_model.py
-|—— README.md
+|—— README_1.md
 ```
 
 ## Use
