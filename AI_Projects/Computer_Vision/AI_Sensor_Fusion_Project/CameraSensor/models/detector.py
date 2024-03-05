@@ -11,16 +11,18 @@ import pycuda.driver as cuda
 import tensorrt as trt
 from numpy import ndarray
 
-os.environ['CUDA_MODULE_LOADING'] = 'LAZY'
-warnings.filterwarnings(action='ignore', category=DeprecationWarning)
+os.environ["CUDA_MODULE_LOADING"] = "LAZY"
+warnings.filterwarnings(action="ignore", category=DeprecationWarning)
 
-'''
+
+"""
 This class is used to create an instance of the TRTEngine. The __init__() method takes a weight parameter which can be either a string or a Path object, and sets up the engine, bindings, and runs a warm-up.
 The __init_engine() method initializes the model, context, and names of inputs and outputs. The __init_bindings() method creates dynamic or static tensors depending on the shape of the input data. The __warm_up() method runs 10 iterations of the engine to warm it up.
 The set_profiler() method sets a profiler for the context if one is provided. The __call__() method takes in inputs and returns bboxes, scores, labels, and nums as outputs.
-'''
-class TRTEngine:
+"""
 
+
+class TRTEngine:
     def __init__(self, weight: Union[str, Path]) -> None:
         self.weight = Path(weight) if isinstance(weight, str) else weight
         self.stream = cuda.Stream(0)
@@ -30,7 +32,7 @@ class TRTEngine:
 
     def __init_engine(self) -> None:
         logger = trt.Logger(trt.Logger.WARNING)
-        trt.init_libnvinfer_plugins(logger, namespace='')
+        trt.init_libnvinfer_plugins(logger, namespace="")
         with trt.Runtime(logger) as runtime:
             model = runtime.deserialize_cuda_engine(self.weight.read_bytes())
 
@@ -56,7 +58,7 @@ class TRTEngine:
 
     def __init_bindings(self) -> None:
         dynamic = False
-        Tensor = namedtuple('Tensor', ('name', 'dtype', 'shape', 'cpu', 'gpu'))
+        Tensor = namedtuple("Tensor", ("name", "dtype", "shape", "cpu", "gpu"))
         inp_info = []
         out_info = []
         out_ptrs = []
@@ -94,7 +96,7 @@ class TRTEngine:
 
     def __warm_up(self) -> None:
         if self.is_dynamic:
-            print('You engine has dynamic axes, please warm up by yourself !')
+            print("You engine has dynamic axes, please warm up by yourself !")
             return
         for _ in range(10):
             inputs = []
@@ -103,26 +105,20 @@ class TRTEngine:
             self.__call__(inputs)
 
     def set_profiler(self, profiler: Optional[trt.IProfiler]) -> None:
-        self.context.profiler = profiler \
-            if profiler is not None else trt.Profiler()
+        self.context.profiler = profiler if profiler is not None else trt.Profiler()
 
     def __call__(self, *inputs) -> Tuple[ndarray, ndarray, ndarray, ndarray]:
-
         assert len(inputs) == self.num_inputs
-        contiguous_inputs: List[ndarray] = [
-            np.ascontiguousarray(i) for i in inputs
-        ]
+        contiguous_inputs: List[ndarray] = [np.ascontiguousarray(i) for i in inputs]
 
         for i in range(self.num_inputs):
-
             if self.is_dynamic:
-                self.context.set_binding_shape(
-                    i, tuple(contiguous_inputs[i].shape))
-                self.inp_info[i].gpu = cuda.mem_alloc(
-                    contiguous_inputs[i].nbytes)
+                self.context.set_binding_shape(i, tuple(contiguous_inputs[i].shape))
+                self.inp_info[i].gpu = cuda.mem_alloc(contiguous_inputs[i].nbytes)
 
-            cuda.memcpy_htod_async(self.inp_info[i].gpu, contiguous_inputs[i],
-                                   self.stream)
+            cuda.memcpy_htod_async(
+                self.inp_info[i].gpu, contiguous_inputs[i], self.stream
+            )
             self.bindings[i] = int(self.inp_info[i].gpu)
 
         output_gpu_ptrs: List[int] = []
