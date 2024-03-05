@@ -1,16 +1,16 @@
-import pandas as pd
 import numpy as np
-
-from features_slow_lane import *
-from features_centre_lane import *
+import pandas as pd
+import pickle
+import sklearn
 
 import pycaret
 from pycaret.classification import *
 
 import xgboost
-import sklearn
 
-import pickle
+from features_centre_lane import *
+from features_slow_lane import *
+
 
 
 def slow_lane_count():

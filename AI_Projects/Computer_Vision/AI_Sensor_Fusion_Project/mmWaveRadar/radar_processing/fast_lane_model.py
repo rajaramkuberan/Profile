@@ -1,17 +1,17 @@
-import pandas as pd
+import warnings
+import pickle
+
 import numpy as np
-import warnings  # ignore warnings
-
-warnings.filterwarnings("ignore")
-from features_fast_lane import *
-
-import pycaret
-from pycaret.classification import *
+import pandas as pd
 
 import xgboost
 import lightgbm
 
-import pickle
+import pycaret
+from pycaret.classification import *
+
+from features_fast_lane import *
+
 
 
 def fast_lane_count():

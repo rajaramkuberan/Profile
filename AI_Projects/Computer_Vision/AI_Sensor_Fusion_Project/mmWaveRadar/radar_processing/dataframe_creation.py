@@ -11,13 +11,11 @@ def dataframe_creation():
         df1 = pd.read_csv(r"data_20240224-113829.csv")
 
         # Read the second CSV file
-        df2 = pd.read_csv(r"data_20240224-114329.csv")  # Replace "second_file.csv" with the actual filename of your second CSV file
-
+        df2 = pd.read_csv(r"data_20240224-114329.csv")  
+        
         # Concatenate the two dataframes
         #df = pd.concat([df1, df2], ignore_index=True)
         combined_df = pd.concat([df1, df2], ignore_index=True)
-
-        # Display or use the combined DataFrame
                     
         return combined_df
         
