@@ -16,9 +16,13 @@ warnings.filterwarnings(action="ignore", category=DeprecationWarning)
 
 
 """
-This class is used to create an instance of the TRTEngine. The __init__() method takes a weight parameter which can be either a string or a Path object, and sets up the engine, bindings, and runs a warm-up.
-The __init_engine() method initializes the model, context, and names of inputs and outputs. The __init_bindings() method creates dynamic or static tensors depending on the shape of the input data. The __warm_up() method runs 10 iterations of the engine to warm it up.
-The set_profiler() method sets a profiler for the context if one is provided. The __call__() method takes in inputs and returns bboxes, scores, labels, and nums as outputs.
+This class is used to create an instance of the TRTEngine. 
+The __init__() method takes a weight parameter which can be either a string or a Path object, and sets up the engine, bindings, and runs a warm-up.
+The __init_engine() method initializes the model, context, and names of inputs and outputs. 
+The __init_bindings() method creates dynamic or static tensors depending on the shape of the input data. 
+The __warm_up() method runs 10 iterations of the engine to warm it up.
+The set_profiler() method sets a profiler for the context if one is provided.
+The __call__() method takes in inputs and returns bboxes, scores, labels, and nums as outputs.
 """
 
 
