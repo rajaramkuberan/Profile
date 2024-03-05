@@ -83,13 +83,9 @@ The Radar Automated Traffic Count Insight (RATCI) System represents a sophistica
 |—— radar_parsing
 |    |—— mmwave_parse.py
 |—— radar_processing
-|    |—— bike_lane_model.py
-|    |—— centre_lane_model.py
 |    |—— dataframe_creation.py
 |    |—— Fast_Lane_Final_Model.pkl
 |    |—— fast_lane_model.py
-|    |—— features_bike_lane.py
-|    |—— features_centre_lane.py
 |    |—— features_fast_lane.py
 |    |—— features_slow_lane.py
 |    |—— main.py
