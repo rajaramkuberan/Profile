@@ -95,7 +95,7 @@ The Radar Automated Traffic Count Insight (RATCI) System represents a sophistica
 |    |—— main.py
 |    |—— Slow_Lane_Final_Model.pkl
 |    |—— slow_lane_model.py
-|—— README_1.md
+|—— README.md
 ```
 
 ## Use
