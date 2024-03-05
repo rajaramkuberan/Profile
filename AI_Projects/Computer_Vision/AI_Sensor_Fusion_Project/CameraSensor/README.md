@@ -18,11 +18,11 @@
 
 ## Pretrained model
 
-| Model           | Precision | Inference Framework | Download                     |
-| --------------- | --------- | ------------------- | ---------------------------- |
-| COCO_pretrained | FP16      | TensorRT            | [Engine File](link_to_model) |
-| Custom_Model    | FP16      | TensorRT            | [Engine File](link_to_model) |
-| Custom_Model    | FP32      | ONNX                | [ONNX File](link_to_model)   |
+| Model           | Precision | Inference Framework | Download                                                                                         |
+| --------------- | --------- | ------------------- | ------------------------------------------------------------------------------------------------ |
+| COCO_pretrained | FP16      | TensorRT            | [Engine File](AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/tensorrt) |
+| Custom_Model    | FP16      | TensorRT            | [Engine File](AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/tensorrt) |
+| Custom_Model    | FP32      | ONNX                | [ONNX File](AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/onnx)       |
 
 ## Directory Hierarchy
 
@@ -53,7 +53,7 @@
 - software
   ```
   OS: Ubuntu 20.04 LTS
-  Python: 3.8.5 
+  Python: 3.8.5
   Jetpack: 5.1
   TensorRT : 8.5.5
   ```
@@ -62,7 +62,6 @@
   Camera: 4MP IR Camera
   GPU: Nvidia Jetson Xavier
   ```
-
 
 ## References
 
