@@ -13,7 +13,7 @@ cliDevice = None
 # Constants
 CLI_SERIAL_PORT = '/dev/ttyUSB0'
 DATA_SERIAL_PORT = '/dev/ttyUSB1'
-RADAR_CFG_FILE = 'profiles_50_20.cfg'
+RADAR_CFG_FILE = './cfg/profiles_50_20.cfg'
 HEADER_LENGTH = 40
 LOG_DIR = f'logs/{time.strftime("%Y-%m-%d")}'
 CSV_DIR = f'CSV_Files/{time.strftime("%Y-%m-%d")}'
