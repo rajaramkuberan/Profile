@@ -62,26 +62,11 @@ The Radar Automated Traffic Count Insight (RATCI) System represents a sophistica
 | dataset-B | [download]() |
 | dataset-C | [download]() |
 -->
-## Use
-- for traffic_count output (RATCI System)
-  ```
-  python main.py
-  ```
-- for parsing
-  ```
-  python mmwave_parse.py
-  ```
-<!--
-## Pretrained model
-| Model | Download |
-| ---     | ---   |
-| Model-1 | [download]() |
-| Model-2 | [download]() |
-| Model-3 | [download]() |
--->
 
 ## Directory Hierarchy
 ```
+|—— assets
+|    |—— ratci-system.png
 |—— cfg
 |    |—— profiles_50.cfg
 |    |—— profiles_50_1.cfg
@@ -111,6 +96,26 @@ The Radar Automated Traffic Count Insight (RATCI) System represents a sophistica
 |    |—— slow_lane_model.py
 |—— README.md
 ```
+
+## Use
+- for traffic_count output (RATCI System)
+  ```
+  python main.py
+  ```
+- for parsing
+  ```
+  python mmwave_parse.py
+  ```
+<!--
+## Pretrained model
+| Model | Download |
+| ---     | ---   |
+| Model-1 | [download]() |
+| Model-2 | [download]() |
+| Model-3 | [download]() |
+-->
+
+
 ## Code Details
 ### Tested Platform
 - software
