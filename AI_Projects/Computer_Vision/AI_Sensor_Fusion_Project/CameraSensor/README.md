@@ -27,7 +27,7 @@
 ## Directory Hierarchy
 
 ```
-|—— atcc_rhs_tp2_v3.py
+|—— camera_detection.py
 |—— class.txt
 |—— engine
 |    |—— onnx
@@ -42,6 +42,7 @@
 |        |—— detector.cpython-38.pyc
 |        |—— utils.cpython-38.pyc
 |—— ntracker.py
+|—— README.md
 |—— __pycache__
 |    |—— ntracker.cpython-38.pyc
 ```
