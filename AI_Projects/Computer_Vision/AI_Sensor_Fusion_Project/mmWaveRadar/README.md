@@ -1,98 +1,95 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Profile" />
+Title
+===
+Abstract:xxx
+## Papar Information
+- Title:  `paper name`
+- Authors:  `A`,`B`,`C`
+- Preprint: [https://arxiv.org/abs/xx]()
+- Full-preprint: [paper position]()
+- Video: [video position]()
 
-  &#xa0;
+## Install & Dependence
+- python
+- pytorch
+- numpy
 
-  <!-- <a href="https://profile.netlify.app">Demo</a> -->
-</div>
+## Dataset Preparation
+| Dataset | Download |
+| ---     | ---   |
+| dataset-A | [download]() |
+| dataset-B | [download]() |
+| dataset-C | [download]() |
 
-<h1 align="center">Profile</h1>
+## Use
+- for train
+  ```
+  python train.py
+  ```
+- for test
+  ```
+  python test.py
+  ```
+## Pretrained model
+| Model | Download |
+| ---     | ---   |
+| Model-1 | [download]() |
+| Model-2 | [download]() |
+| Model-3 | [download]() |
 
-<p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/profile?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/profile?color=56BEB8">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/profile?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/profile?color=56BEB8">
-
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/profile?color=56BEB8" /> -->
-
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/profile?color=56BEB8" /> -->
-
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/profile?color=56BEB8" /> -->
-</p>
-
-<!-- Status -->
-
-<!-- <h4 align="center"> 
-	🚧  Profile 🚀 Under construction...  🚧
-</h4> 
-
-<hr> -->
-
-<p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
-</p>
-
-<br>
-
-## :dart: About ##
-
-Describe your project
-
-## :sparkles: Features ##
-
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
-
-## :rocket: Technologies ##
-
-The following tools were used in this project:
-
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-
-## :white_check_mark: Requirements ##
-
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
-
-## :checkered_flag: Starting ##
-
-```bash
-# Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/profile
-
-# Access
-$ cd profile
-
-# Install dependencies
-$ yarn
-
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
+## Directory Hierarchy
 ```
+|—— cfg
+|    |—— profiles_50.cfg
+|    |—— profiles_50_1.cfg
+|    |—— profiles_50_10.cfg
+|    |—— profiles_50_15.cfg
+|    |—— profiles_50_20.cfg
+|    |—— profiles_50_5.cfg
+|—— datasheet
+|    |—— IWR6843ISK.pdf
+|    |—— README.md
+|—— radar_parsing
+|    |—— mmwave_parse.py
+|—— radar_processing
+|    |—— bike_lane_model.py
+|    |—— centre_lane_model.py
+|    |—— dataframe_creation.py
+|    |—— Fast_Lane_Final_Model.pkl
+|    |—— fast_lane_model.py
+|    |—— features_bike_lane.py
+|    |—— features_centre_lane.py
+|    |—— features_fast_lane.py
+|    |—— features_slow_lane.py
+|    |—— main.py
+|    |—— Slow_Lane_Final_Model.pkl
+|    |—— slow_lane_model.py
+```
+## Code Details
+### Tested Platform
+- software
+  ```
+  OS: Debian unstable (May 2021), Ubuntu LTS
+  Python: 3.8.5 (anaconda)
+  PyTorch: 1.7.1, 1.8.1
+  ```
+- hardware
+  ```
+  CPU: Intel Xeon 6226R
+  GPU: Nvidia RTX3090 (24GB)
+  ```
+### Hyper parameters
+```
+```
+## References
+- [paper-1]()
+- [paper-2]()
+- [code-1](https://github.com)
+- [code-2](https://github.com)
+  
+## License
 
-## :memo: License ##
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
-
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
-
-&#xa0;
-
-<a href="#top">Back to top</a>
+## Citing
+If you use xxx,please use the following BibTeX entry.
+```
+```
