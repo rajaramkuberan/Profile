@@ -13,10 +13,10 @@ cliDevice = None
 # Constants
 CLI_SERIAL_PORT = '/dev/ttyUSB0'
 DATA_SERIAL_PORT = '/dev/ttyUSB1'
-RADAR_CFG_FILE = '/home/ttpl2rhs/Desktop/Radar_test/profiles_50_20.cfg'
+RADAR_CFG_FILE = 'profiles_50_20.cfg'
 HEADER_LENGTH = 40
-LOG_DIR = f'/home/ttpl2rhs/Desktop/Radar_test/logs/{time.strftime("%Y-%m-%d")}'
-CSV_DIR = f'/home/ttpl2rhs/Desktop/Radar_test/CSV_Files/{time.strftime("%Y-%m-%d")}'
+LOG_DIR = f'logs/{time.strftime("%Y-%m-%d")}'
+CSV_DIR = f'CSV_Files/{time.strftime("%Y-%m-%d")}'
 
 # Ensure directories exist
 os.makedirs(LOG_DIR, exist_ok=True)
