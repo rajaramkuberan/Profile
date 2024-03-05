@@ -18,11 +18,11 @@
 
 ## Pretrained model
 
-| Model           | Precision | Inference Framework | Download                                                                                         |
-| --------------- | --------- | ------------------- | ------------------------------------------------------------------------------------------------ |
-| COCO_pretrained | FP16      | TensorRT            | [Engine File](AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/tensorrt) |
-| Custom_Model    | FP16      | TensorRT            | [Engine File](AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/tensorrt) |
-| Custom_Model    | FP32      | ONNX                | [ONNX File](AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/onnx)       |
+| Model           | Precision | Inference Framework | Download                                                                                                                                                                                                                                     |
+| --------------- | --------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| COCO_pretrained | FP16      | TensorRT            | [Engine File](https://github.com/rajaramkuberan/ProjectProfile/tree/main/AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/tensorrtAI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/tensorrt) |
+| Custom_Model    | FP16      | TensorRT            | [Engine File](https://github.com/rajaramkuberan/ProjectProfile/tree/main/AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/tensorrtAI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/tensorrt) |
+| Custom_Model    | FP32      | ONNX                | [ONNX File](https://github.com/rajaramkuberan/ProjectProfile/tree/main/AI_Projects/Computer_Vision/AI_Sensor_Fusion_Project/CameraSensor/engine/onnx)                                                                                        |
 
 ## Directory Hierarchy
 
