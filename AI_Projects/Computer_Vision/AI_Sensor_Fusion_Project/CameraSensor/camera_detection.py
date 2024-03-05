@@ -298,7 +298,7 @@ def main():
                         if length < 120:
                             lcv_counter.append(id)
                             melcv_counter = mav_count_screenshot(
-                                "/home/mic-710aix/ATCC/TP2_RHS/Actual/LCV_Types/LCV/Screenshots",
+                                "LCV_Types/LCV/Screenshots",
                                 melcv_counter,
                                 frame,
                                 id,
