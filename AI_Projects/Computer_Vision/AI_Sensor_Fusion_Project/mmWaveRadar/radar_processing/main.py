@@ -11,9 +11,6 @@ import pandas as pd
 from dataframe_creation import *
 from fast_lane_model import *
 from slow_lane_model import *
-from centre_lane_model import *
-from bike_lane_model import *
-
 
 current_date = time.strftime("%Y-%m-%d")
 log_dir = f"D:/radar_processing/radar_processing/{current_date}"
