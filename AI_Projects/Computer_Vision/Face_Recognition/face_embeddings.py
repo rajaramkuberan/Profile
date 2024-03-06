@@ -175,6 +175,7 @@ def main(args):
     logging.info(
         f"Inserted data into '{args.collection_name}' collection successfully."
     )
+    face_collection.release()
 
 
 if __name__ == "__main__":
