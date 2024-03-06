@@ -1,4 +1,4 @@
-# Production Grade E2E Scalable IoT Architecture Pipeline
+# Production Grade E2E Scalable IoT Architecture Pipeline - NVIDIA + AWS
 
 <p align="center" >
 	<img src="assets/arch.png" width="1000">
