@@ -1,8 +1,12 @@
 ## Production Grade E2E Scalable IoT Architecture Pipeline - NVIDIA + AWS
 
-<p align="center" >
-	<img src="assets/arch.png" width="1000">
+<p align="center">
+    <img src="assets/arch.png" width="1000">
+    <br>
+    <em>Figure: E2E Architecture <strong>(<span style="font-size: larger;">Zoom In</span>)</strong></em>
 </p>
+
+
 
 ## Prerequisites
 
