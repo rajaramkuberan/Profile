@@ -7,7 +7,7 @@
 - numpy
 - TensorRT
 - onnxruntime
-- ultralytics - yolov8
+- yolo model
 
 ## Use
 

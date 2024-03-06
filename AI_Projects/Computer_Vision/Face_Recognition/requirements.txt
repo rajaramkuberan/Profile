@@ -1,0 +1,9 @@
+docker-compose
+numpy
+opencv-python
+pandas
+pymilvus
+python-dotenv
+%torch
+%torchvision
+ultralytics
