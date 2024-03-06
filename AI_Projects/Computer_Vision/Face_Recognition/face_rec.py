@@ -329,7 +329,11 @@ def main(model_path, collection_name):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Face Recognition Project")
     parser.add_argument(
-        "-m", "--model_path", type=str, required=True, help="Path to the YOLOv8 model"
+        "-m",
+        "--model_path",
+        type=str,
+        required=True,
+        help="Path to the YOLOv8 model",
     )
     parser.add_argument(
         "-c",
